@@ -3,43 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de Inicio</title>
+    <title>My Home Page</title>
     <style>
-        
         body {
-            background-color: black;
-            color: white;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: center;
+        }
+        .image-container {
+            margin-right: 20px;
+        }
+        .image-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Hace la imagen redonda */
+            border: 3px solid white; /* Borde blanco */
+        }
+        .text-container {
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
             text-align: center;
         }
-
-        
-        .profile-img {
-            border: 5px solid white; 
-            border-radius: 10px; 
-            width: 200px; 
-            height: 200px;
-            object-fit: cover; 
-            margin-top: 20px; 
-        }
-        
-        h1 {
-            font-size: 2rem;
-        }
-
-        
         p {
-            font-size: 1.2rem;
+            font-size: 18px;
+            color: #555;
+            text-align: justify;
         }
     </style>
 </head>
 <body>
 
-    <h1>Bienvenidos a Mi Página de Inicio</h1>
-    <p>Hola, soy Karen y esta es mi página personal.</p>
+    <div class="container">
+        <!-- Contenedor de la imagen -->
+        <div class="image-container">
+            <img src="https://github.com/KAREN123GARCIA/Mi-Home-Page/blob/850359526068adcc544a4597526fcc89a7ccc2c2/WhatsApp%20Image%202025-04-13%20at%2010.59.22%20PM.jpeg?raw=true" alt="Foto Karen">
+        </div>
 
-   
-    <img class="profile-img" src="https://github.com/KAREN123GARCIA/Mi-Home-Page/blob/850359526068adcc544a4597526fcc89a7ccc2c2/WhatsApp%20Image%202025-04-13%20at%2010.59.22%20PM.jpeg?raw=true" alt="Mi Foto">
+        <!-- Contenedor del texto -->
+        <div class="text-container">
+            <h1>Welcome to My Home Page</h1>
+            <p>HHello, I’m Karen, I’m in the Distributed Programming course, and this is my first homepage..</p>
+        </div>
+    </div>
 
 </body>
 </html>
